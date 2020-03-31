@@ -13,3 +13,5 @@ pip install django==3
 สร้าง URLconf ใน polls/urls.py
 
 python manage.py runserver
+
+python manage.py migrate

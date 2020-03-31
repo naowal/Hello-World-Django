@@ -1,0 +1,40 @@
+Database setup ที่ mysite/settings.py
+
+สร้าง Models polls/models.py
+
+Activating models¶
+That small bit of model code gives Django a lot of information. With it, Django is able to:
+
+Create a database schema (CREATE TABLE statements) for this app.
+Create a Python database-access API for accessing Question and Choice objects.
+But first we need to tell our project that the polls app is installed.
+
+เพิ่ม polls.apps.PollsConfig ใน INSTALLED_APPS
+
+python manage.py makemigrations polls
+
+python manage.py sqlmigrate polls 0001
+
+python manage.py check
+
+python manage.py shell
+
+python manage.py migrate
+
+python manage.py shell
+
+เพิ่ม __str__() ใน Question และ Choice
+
+เพิ่ม custom method ใน method
+
+python manage.py shell
+
+python manage.py createsuperuser
+
+python manage.py runserver
+
+http://127.0.0.1:8000/admin/
+
+ให้ poll app แก้ไขได้ใน Admin site -> เพิ่มที่ polls/admin.py
+
+แก้ Timezone ได้ใน settings.py
