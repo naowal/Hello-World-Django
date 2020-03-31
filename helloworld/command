@@ -1,0 +1,15 @@
+mkdir helloworld && cd helloworld
+python3 -m venv myvenv
+source myvenv/bin/activate
+django-admin startproject mysite
+pip install django==3
+cd mysite
+ls
+pip install django==3
+
+เขียน first view
+สร้าง URLconf ใน mysite/urls.py
+
+สร้าง URLconf ใน polls/urls.py
+
+python manage.py runserver
